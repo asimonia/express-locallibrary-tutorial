@@ -82,11 +82,11 @@ router.get('/authors', author_controller.author_list);
 // // POST request to update Genre.
 // router.post('/genre/:id/update', genre_controller.genre_update_post);
 
-// // GET request for one Genre.
-// router.get('/genre/:id', genre_controller.genre_detail);
+// GET request for one Genre.
+router.get('/genre/:id', genre_controller.genre_detail);
 
-// // GET request for list of all Genre.
-// router.get('/genres', genre_controller.genre_list);
+// GET request for list of all Genre.
+router.get('/genres', genre_controller.genre_list);
 
 // /// BOOKINSTANCE ROUTES ///
 
