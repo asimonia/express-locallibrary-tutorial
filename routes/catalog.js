@@ -59,8 +59,8 @@ router.get('/books', book_controller.book_list);
 // // GET request for one Author.
 // router.get('/author/:id', author_controller.author_detail);
 
-// // GET request for list of all Authors.
-// router.get('/authors', author_controller.author_list);
+// GET request for list of all Authors.
+router.get('/authors', author_controller.author_list);
 
 // /// GENRE ROUTES ///
 
