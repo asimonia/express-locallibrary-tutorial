@@ -52,7 +52,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-var mongoDB = 'mongodb+srv://asimonia:34JVOlsMDYLm4iLy@cluster0-iwcuq.mongodb.net/local_library?retryWrites=true';
+var dev_db_url = 'mongodb+srv://asimonia:34JVOlsMDYLm4iLy@cluster0-iwcuq.mongodb.net/local_library?retryWrites=true';
+var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 
 //Get the default connection
